@@ -1,6 +1,6 @@
 # Projeto API de estudo em Java de Raphael Mendes Stopa
 
-Olá Jedi. Esta é uma simples API de estudo. Se trata de um cadastro de usuários da força. A ideia de fazer esta API veio do filme Star Wars, a vingança dos Sith. Neste filme, uma das coisas que o recém formado império galáctico consegue ao invadir a sede do conselho Jedi, e os dados deles sobre usuários da forca catalogados por todo a galáxia.
+Olá Jedi. Esta é uma API de estudo. Se trata de um cadastro de usuários da força. A ideia de fazer esta API veio do filme Star Wars, a vingança dos Sith. Neste filme, uma das coisas que o recém formado império galáctico consegue ao invadir a sede do conselho Jedi, e os dados deles sobre usuários da forca catalogados por todo a galáxia.
 
 As entidades deste estudo possuem comentários, do porque fiz como fiz de acordo com a história do SW.
 
