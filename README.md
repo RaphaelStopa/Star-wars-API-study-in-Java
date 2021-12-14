@@ -6,7 +6,7 @@ As entidades deste estudo possuem comentários, do porque fiz como fiz de acordo
 
 Este estudo contem, todo o tema abordado de alguma forma, mas uma features estas. P.s; Não contem testes porque este tema ainda será abordado.
 
-![alt_text](src/main/resources/static/star wars.jpg)
+![alt_text](https://github.com/RaphaelStopa/Star-wars-API-study-in-java/blob/master/src/main/resources/static/star%20wars.jpg)
 
 ## Rodando o projeto
 
