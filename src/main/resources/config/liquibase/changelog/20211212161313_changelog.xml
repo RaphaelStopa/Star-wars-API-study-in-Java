@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="20211122173026-1" author="Stopa">
+        <loadData
+                file="config/liquibase/data/planet.csv"
+                separator=";"
+                tableName="planet">
+        </loadData>
+    </changeSet>
+    <changeSet id="20211122173026-2" author="Stopa">
+        <loadData
+                file="config/liquibase/data/species.csv"
+                separator=";"
+                tableName="species">
+        </loadData>
+    </changeSet>
+        <changeSet id="20211122173026-3" author="Stopa">
+        <loadData
+                file="config/liquibase/data/force_user.csv"
+                separator=";"
+                tableName="force_user">
+        </loadData>
+    </changeSet>
+    <changeSet id="20211122173026-4" author="Stopa">
+        <loadData
+                file="config/liquibase/data/type_force_user.csv"
+                separator=";"
+                tableName="type_force_user">
+        </loadData>
+    </changeSet>
+    <changeSet id="20211122173026-5" author="Stopa">
+        <loadData
+                file="config/liquibase/data/known_master.csv"
+                separator=";"
+                tableName="known_master">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

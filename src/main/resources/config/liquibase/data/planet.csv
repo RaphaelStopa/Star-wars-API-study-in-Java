@@ -1,0 +1,12 @@
+id;name;number_suns;number_moons;approximate_region;is_breathable;still_exist;climate;planet_type
+1;Ando;1;2;Orla Média;true;true;COLD;TERRESTRIAL
+2;Geonosis;1;15;Anel Externo;true;true;HOT;TERRESTRIAL
+3;Tatooine;2;3;Setor Arkanis;true;true;HOT;TERRESTRIAL
+4;Mustafar;1;0;Orla Exterior;true;true;VERY_HOT;TERRESTRIAL
+5;Coruscant;1;4;Mundos do Núcleo;true;true;MEDIAN;TERRESTRIAL
+6;Endor;1;9;Territórios da Orla Exterior;true;true;MEDIAN;GASEOUS
+7;Corellia;1;3;Núcleo Galáctico;true;true;MEDIAN;TERRESTRIAL
+8;Dathomir;1;2;Orla Média;true;true;HOT;TERRESTRIAL
+9;Shili;1;6;Região de Expansão;true;true;MEDIAN;TERRESTRIAL
+10;Naboo;1;3;Orla Média;true;true;MEDIAN;TERRESTRIAL
+11;Stewjon;0;0;No info;true;true;MEDIAN;TERRESTRIAL

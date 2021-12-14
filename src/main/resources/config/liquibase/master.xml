@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql, mariadb"/>
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+    <property name="datetimeType" value="datetime(6)" dbms="mysql, mariadb"/>
+    <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212150106_added_entity_ForceUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212152116_added_entity_Species.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212122527_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212153813_added_entity_Planet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212131817_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212132626_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212132954_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212133200_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212163735_added_entity_TypeUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212164004_added_entity_KnownMaster.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212134922_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212135344_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211212161313_changelog.xml" relativeToChangelogFile="false"/>
+</databaseChangeLog>

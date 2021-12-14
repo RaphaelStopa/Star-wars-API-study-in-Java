@@ -1,0 +1,6 @@
+id;name;stardate_birth;stardate_death;is_legends;gender;species_id;planet_id
+1;Anakin Skywalker;41 BBY;4 ABY;false;MALE;1;3
+2;Darth Maul;;2 ABY;false;MALE;2;8
+3;Ahsoka Tano;36 ABY;;false;FEMININE;4;9
+4;Sheev Palpatine;84 BBY;35 ABY;false;MALE;1;10
+5;Obi-Wan Kenobi;57 ABY;0 ABY;false;MALE;1;11
