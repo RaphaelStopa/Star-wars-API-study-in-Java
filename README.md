@@ -6,7 +6,7 @@ As entidades deste estudo possuem comentários, do porque fiz como fiz de acordo
 
 Este estudo contem, todo o tema abordado de alguma forma, mas uma features estas. P.s; Não contem testes porque este tema ainda será abordado.
 
-![alt text](https://github.com/RaphaelStopa/five_html_and_css_projects---number_3/blob/main/CSS%20%26%20Javascript%20Toggle%20Button/CSS%20%26%20Javascript%20Toggle%20Button.jpg)
+![alt text](https://github.com/RaphaelStopa/Star-wars-API-study-in-java/blob/master/src/main/resources/static/star%20wars.jpg)
 
 ## Rodando o projeto
 
