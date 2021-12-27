@@ -22,17 +22,11 @@ public class KnownMastersServiceImpl implements KnownMastersService {
         this.repository = repository;
     }
 
+    // TODO: prevent the same master from being added to the same apprentice
     @Override
     public KnownMaster save(KnownMaster knownMaster) {
-        return repository.save(knownMaster);
-    }
 
-    @Override
-    public Optional<KnownMaster> partialUpdate(KnownMaster knownMaster) {
-        if (!repository.existsById(knownMaster.getId())) {
-            throw BusinessException.badRequest();
-        }
-        return Optional.of(repository.save(knownMaster));
+        return repository.save(knownMaster);
     }
 
     @Override
@@ -48,11 +42,6 @@ public class KnownMastersServiceImpl implements KnownMastersService {
     @Override
     public List<KnownMaster> findAllByMasterId(Long id) {
         return repository.findAllByMasterId(id);
-    }
-
-    @Override
-    public List<KnownMaster> findAllByForceUserId(Long id) {
-        return repository.findAllByForceUserId(id);
     }
 
 

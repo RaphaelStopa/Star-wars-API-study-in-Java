@@ -6,6 +6,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -27,7 +28,7 @@ public class Species implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @NotBlank
+    @NotNull
     @Column(name = "name", unique = true, nullable = false)
     private String name;
 

@@ -16,9 +16,9 @@ public class KnownMasterDTO implements Serializable {
 
     private Long id;
 
-    @NotBlank
+
     private ForceUserDTO master;
 
-    @NotBlank
+
     private ForceUserDTO forceUser;
 }
