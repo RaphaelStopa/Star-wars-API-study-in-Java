@@ -1,7 +1,7 @@
 package com.example.demo.web.rest;
 
 
-import com.example.demo.facade.KnownMastersFacade;
+import com.example.demo.facade.KnownMasterFacade;
 import com.example.demo.facade.dto.KnownMasterDTO;
 import com.example.demo.service.exceptions.BadRequestAlertException;
 import com.example.demo.util.HeaderUtil;
@@ -29,9 +29,9 @@ public class KnownMasterResource {
 
     private static final String ENTITY_NAME = "knownMasters";
 
-    private final KnownMastersFacade facade;
+    private final KnownMasterFacade facade;
 
-    public KnownMasterResource(KnownMastersFacade facade) {
+    public KnownMasterResource(KnownMasterFacade facade) {
         this.facade = facade;
     }
 

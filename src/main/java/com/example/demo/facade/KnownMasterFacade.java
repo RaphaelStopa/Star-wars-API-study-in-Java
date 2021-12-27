@@ -2,7 +2,7 @@ package com.example.demo.facade;
 
 import com.example.demo.domain.KnownMaster;
 import com.example.demo.facade.dto.KnownMasterDTO;
-import com.example.demo.facade.mapper.KnownMastersMapper;
+import com.example.demo.facade.mapper.KnownMasterMapper;
 import com.example.demo.service.KnownMastersService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,16 +15,16 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class KnownMastersFacade {
+public class KnownMasterFacade {
 
 
-    private final Logger log = LoggerFactory.getLogger(KnownMastersFacade.class);
+    private final Logger log = LoggerFactory.getLogger(KnownMasterFacade.class);
 
-    private final KnownMastersMapper mapper;
+    private final KnownMasterMapper mapper;
 
     private final KnownMastersService service;
 
-    public KnownMastersFacade(KnownMastersMapper mapper, KnownMastersService service) {
+    public KnownMasterFacade(KnownMasterMapper mapper, KnownMastersService service) {
         this.mapper = mapper;
         this.service = service;
     }

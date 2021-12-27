@@ -5,7 +5,7 @@ import com.example.demo.facade.dto.KnownMasterDTO;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring", uses = {ForceUserMapper.class})
-public interface KnownMastersMapper extends EntityMapper<KnownMasterDTO, KnownMaster> {
+public interface KnownMasterMapper extends EntityMapper<KnownMasterDTO, KnownMaster> {
 
     KnownMasterDTO toDto(KnownMaster knownMaster);
 }
