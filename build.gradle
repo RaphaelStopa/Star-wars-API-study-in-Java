@@ -91,6 +91,9 @@ dependencies {
 
 	//this single dependency makes swagger/openAPI work
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+	//as of spring 2.30 this dependency no longer comes by default and it is for validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.1'
 }
 
 test {

@@ -30,7 +30,6 @@ public class PlanetFacade {
 
     public PlanetDTO save(PlanetDTO planetDTO) {
         log.debug("Request to save Planet : {}", planetDTO);
-        service.checkByName(planetDTO.getName());
         Planet planet = mapper.toEntity(planetDTO);
         planet = service.save(planet);
         return mapper.toDto(planet);

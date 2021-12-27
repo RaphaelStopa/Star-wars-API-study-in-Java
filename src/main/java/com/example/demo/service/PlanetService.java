@@ -11,8 +11,6 @@ public interface PlanetService {
 
     Planet save(Planet planet);
 
-    Optional<Planet> partialUpdate(Planet planet);
-
     Page<Planet> findAll(Pageable pageable);
 
     Optional<Planet> findOne(Long id);

@@ -10,8 +10,6 @@ public interface SpeciesService {
 
     Species save(Species species);
 
-    Optional<Species> partialUpdate(Species species);
-
     Page<Species> findAll(Pageable pageable);
 
     Optional<Species> findOne(Long id);

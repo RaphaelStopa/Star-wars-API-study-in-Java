@@ -29,14 +29,6 @@ public class SpeciesServiceImpl implements SpeciesService {
     }
 
     @Override
-    public Optional<Species> partialUpdate(Species species) {
-        if (!repository.existsById(species.getId())) {
-            throw BusinessException.badRequest();
-        }
-        return Optional.of(repository.save(species));
-    }
-
-    @Override
     public Page<Species> findAll(@NonNull Pageable pageable) {
         return repository.findAll(pageable);
     }

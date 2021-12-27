@@ -7,6 +7,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 
@@ -29,7 +30,8 @@ public class Planet implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name", unique = true)
+
+    @Column( name = "name", unique = true)
     private String name;
 
     @Column(name = "number_suns")

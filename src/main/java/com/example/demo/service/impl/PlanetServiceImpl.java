@@ -9,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -27,15 +28,19 @@ public class PlanetServiceImpl implements PlanetService {
 
     @Override
     public Planet save(Planet planet) {
-        return repository.save(planet);
-    }
 
-    @Override
-    public Optional<Planet> partialUpdate(Planet planet) {
-        if (!repository.existsById(planet.getId())) {
-            throw BusinessException.badRequest();
+        checkByName(planet.getName());
+
+        if(planet.getId() == null) {
+
+            if(repository.existsByName(planet.getName())) {
+                throw new BadRequestAlertException("already exists with this name", ENTITY_NAME, "repeated name");
+            }
+
+
         }
-        return Optional.of(repository.save(planet));
+        // TODO: validation is missing for update if there is no name
+        return repository.save(planet);
     }
 
 
@@ -49,23 +54,18 @@ public class PlanetServiceImpl implements PlanetService {
         return repository.findById(id);
     }
 
-
     @Override
     public void checkByName(String name) {
-
         if (Optional.ofNullable(name).isEmpty()) {
             throw new BadRequestAlertException("need a name", ENTITY_NAME, "nonexistent name");
         }
 
+
         if (name.isBlank()) {
             throw new BadRequestAlertException("need a name", ENTITY_NAME, "nonexistent name");
         }
-
-        if (!repository.findByName(name).isEmpty()) {
-            throw new BadRequestAlertException("already exists with this name", ENTITY_NAME, "repeated name");
-
-        }
     }
+
 
     @Override
     public void delete(Long id) {

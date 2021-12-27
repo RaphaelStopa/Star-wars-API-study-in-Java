@@ -5,6 +5,8 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -26,10 +28,12 @@ public class KnownMaster implements Serializable {
     @Column(name = "id")
     private Long id;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(nullable = false)
     private ForceUser master;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(nullable = false)
     private ForceUser forceUser;

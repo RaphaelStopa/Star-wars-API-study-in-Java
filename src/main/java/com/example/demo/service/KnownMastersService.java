@@ -10,7 +10,6 @@ import java.util.Optional;
 public interface KnownMastersService {
     KnownMaster save(KnownMaster knownMaster);
 
-    Optional<KnownMaster> partialUpdate(KnownMaster knownMaster);
 
     Page<KnownMaster> findAll(Pageable pageable);
 
@@ -18,7 +17,6 @@ public interface KnownMastersService {
 
     List<KnownMaster> findAllByMasterId(Long id);
 
-    List<KnownMaster> findAllByForceUserId(Long id);
 
     void delete(Long id);
 }

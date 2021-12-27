@@ -2,6 +2,7 @@ package com.example.demo.facade.dto;
 
 import lombok.*;
 
+import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 @ToString
@@ -15,7 +16,9 @@ public class KnownMasterDTO implements Serializable {
 
     private Long id;
 
+    @NotBlank
     private ForceUserDTO master;
 
+    @NotBlank
     private ForceUserDTO forceUser;
 }
