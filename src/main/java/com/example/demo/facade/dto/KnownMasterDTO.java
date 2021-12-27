@@ -16,9 +16,7 @@ public class KnownMasterDTO implements Serializable {
 
     private Long id;
 
-
     private ForceUserDTO master;
-
 
     private ForceUserDTO forceUser;
 }
