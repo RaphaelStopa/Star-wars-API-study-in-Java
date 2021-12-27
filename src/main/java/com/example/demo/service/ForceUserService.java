@@ -9,8 +9,6 @@ import java.util.Optional;
 public interface ForceUserService {
     ForceUser save(ForceUser forceUser);
 
-    Optional<ForceUser> partialUpdate(ForceUser forceUser);
-
     Page<ForceUser> findAll(Pageable pageable);
 
     Optional<ForceUser> findOne(Long id);

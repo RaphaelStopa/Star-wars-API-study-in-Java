@@ -10,9 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface TypeForceUserService {
-    TypeForceUser save(TypeForceUser typeForceUser);
 
-    Optional<TypeForceUser> partialUpdate(TypeForceUser typeForceUser);
+    TypeForceUser save(TypeForceUser typeForceUser);
 
     Page<TypeForceUser> findAll(Pageable pageable);
 

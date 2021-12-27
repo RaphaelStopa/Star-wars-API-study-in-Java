@@ -6,6 +6,6 @@ import com.example.demo.facade.dto.ForceUserDTO;
 import com.example.demo.facade.dto.PlanetDTO;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring", uses = {})
+@Mapper(componentModel = "spring", uses = {PlanetMapper.class, SpeciesMapper.class})
 public interface ForceUserMapper extends EntityMapper<ForceUserDTO, ForceUser> {
 }

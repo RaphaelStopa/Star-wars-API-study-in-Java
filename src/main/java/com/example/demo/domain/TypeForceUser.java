@@ -5,6 +5,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -41,6 +42,7 @@ public class TypeForceUser implements Serializable {
     @Column(name = "brief_history")
     private String briefHistory;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(nullable = false)
     private ForceUser forceUser;

@@ -35,15 +35,6 @@ public class ForceUserServiceImpl implements ForceUserService {
     }
 
     @Override
-    public Optional<ForceUser> partialUpdate(ForceUser forceUser) {
-        if (!repository.existsById(forceUser.getId())) {
-            throw BusinessException.badRequest();
-        }
-        return Optional.of(repository.save(forceUser));
-    }
-
-
-    @Override
     public Page<ForceUser> findAll(@NonNull Pageable pageable) {
         return repository.findAll(pageable);
     }

@@ -30,14 +30,6 @@ public class TypeForceUserServiceImpl implements TypeForceUserService {
         return repository.save(typeForceUser);
     }
 
-    @Override
-    public Optional<TypeForceUser> partialUpdate(TypeForceUser typeForceUser) {
-        if (!repository.existsById(typeForceUser.getId())) {
-            throw BusinessException.badRequest();
-        }
-        return Optional.of(repository.save(typeForceUser));
-    }
-
 
     @Override
     public Page<TypeForceUser> findAll(@NonNull Pageable pageable) {
